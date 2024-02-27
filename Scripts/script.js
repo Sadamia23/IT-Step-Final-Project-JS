@@ -166,6 +166,7 @@ allRecipes.forEach((recipe) => {
   recipe.addEventListener("click", function () {
     clearHtml();
     curPage = 1;
+    scrollToTop();
     showData(recipe.textContent);
   });
 });
@@ -235,6 +236,7 @@ function showData(query) {
           curPage--;
           clearHtml();
           htmlRenderer(getSearchResultsPage(data.data.recipes, goToPrevPage));
+          scrollToTop();
           showData(query);
         });
       }
@@ -245,6 +247,7 @@ function showData(query) {
           curPage++;
           clearHtml();
           htmlRenderer(getSearchResultsPage(data.data.recipes, goToNextPage));
+          scrollToTop();
           showData(query);
         });
       }
@@ -350,4 +353,11 @@ function renderFullRecipe(data) {
 function hideArticle() {
   article.style.visibility = "hidden";
   body.style.overflow = "auto";
+}
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
 }

@@ -5,6 +5,10 @@
 }
 body {
   background-color: rgb(236, 224, 198);
+  background-image: url("https://wallpapers.com/images/hd/food-4k-1vrcb0mw76zcg4qf.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .container {
@@ -14,7 +18,7 @@ body {
 
 /* Navigation */
 header {
-  background-color: rgb(255, 115, 0);
+  background: linear-gradient(135deg, #332c2b, #ddae14);
 }
 nav {
   display: flex;
@@ -53,7 +57,7 @@ nav ul li a:hover {
   color: white;
   font-weight: 700;
   padding: 15px;
-  background-color: red;
+  background: linear-gradient(135deg, #ff5733, #ff8c33);
   border-radius: 50%;
   box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
     rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
@@ -61,7 +65,8 @@ nav ul li a:hover {
 
 /* Queries and Scrollbar */
 .queries {
-  background-color: rgb(223, 206, 169);
+  background: linear-gradient(135deg, #666262, #ffc933);
+
   width: 200px;
   font-size: 20px;
   height: 1000px;
@@ -101,7 +106,8 @@ main {
   justify-content: space-between;
   max-width: 1200px;
   margin: auto;
-  background-color: rgb(255, 196, 0);
+  /* background-color: rgb(255, 221, 110); */
+  background: linear-gradient(to bottom, #693d33, #ffc400);
 }
 
 .main-content {
@@ -181,7 +187,8 @@ form {
   overflow: hidden;
   box-sizing: border-box;
   justify-content: space-between;
-  background-color: rgb(253, 250, 218);
+  background: linear-gradient(135deg, #eeaa9a, #ffb276);
+
 }
 
 .card-info {
@@ -359,16 +366,12 @@ article img {
 }
 /* Footer */
 
-footer {
-  background-color: #636569;
-}
 .footer-top {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 40px 0;
-  border-left: #ffa500 1px solid;
-  border-right: #ffa500 1px solid;
+  background: linear-gradient(135deg, #616161, #000000);
 }
 
 .footer-column {
